@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oxford 365 Recovery | 24/7 Roadside Assistance</title>
+  <meta name="description"
+    content="Professional 24/7 vehicle recovery in Oxford and M40 corridor. Emergency breakdown assistance, transport, and repairs. Fast local response within 45 mins." />
+  <meta name="keywords"
+    content="Oxford breakdown recovery, tow truck Oxford, M40 recovery service, A34 breakdown, emergency roadside assistance Oxford, vehicle transport Oxfordshire" />
+  <meta name="author" content="Oxford 365 Recovery" />
+  <meta name="theme-color" content="#1F2F3D" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oxford365recovery.co.uk/" />
+  <meta property="og:title" content="Oxford 365 Recovery | 24/7 Emergency Assistance" />
+  <meta property="og:description"
+    content="Stranded in Oxford? We offer fast, reliable, family-run vehicle recovery. Serving M40, A34, A40 and Oxford City Centre 24/7." />
+  <meta property="og:image" content="https://oxford365recovery.co.uk/logo.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://oxford365recovery.co.uk/" />
+  <meta property="twitter:title" content="Oxford 365 Recovery | 24/7 Emergency Assistance" />
+  <meta property="twitter:description"
+    content="Stranded in Oxford? We offer fast, reliable, family-run vehicle recovery. Serving M40, A34, A40 and Oxford City Centre 24/7." />
+  <meta property="twitter:image" content="https://oxford365recovery.co.uk/logo.png" />
+
+  <!-- JSON-LD Structured Data for AI Search -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["AutoRepair", "EmergencyService"],
+      "name": "Oxford 365 Recovery",
+      "image": "https://oxford365recovery.co.uk/logo.png",
+      "@id": "https://oxford365recovery.co.uk",
+      "url": "https://oxford365recovery.co.uk",
+      "telephone": "01865 999 999",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Oxford",
+        "addressRegion": "Oxfordshire",
+        "addressCountry": "UK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.7520,
+        "longitude": -1.2577
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Oxford"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Oxfordshire"
+        },
+        {
+          "@type": "Place",
+          "name": "M40 Corridor"
+        },
+        {
+          "@type": "Place",
+          "name": "A34"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/oxford365recovery",
+        "https://twitter.com/oxford365"
+      ],
+      "description": "24/7 vehicle recovery and emergency roadside assistance in Oxford and surrounding areas. specialising in M40 and A34 rapid response."
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#1F2F3D',
+              light: '#2C3E50',
+              dark: '#16222D',
+            },
+            amber: {
+              DEFAULT: '#E3A536',
+              light: '#F0B650',
+              dark: '#C98F2B',
+            },
+            offwhite: {
+              DEFAULT: '#F9FAFB',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          transitionTimingFunction: {
+            'soft': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #F9FAFB;
+      color: #1F2F3D;
+    }
+  </style>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
