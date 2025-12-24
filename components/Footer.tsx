@@ -55,9 +55,9 @@ const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
           <div>
             <h4 className="font-bold mb-4 text-white">Legal</h4>
             <ul className="space-y-3 text-sm text-white/60">
-              <li><button onClick={() => onOpenLegal('privacy')} className="hover:text-white transition-colors text-left">Privacy Policy</button></li>
-              <li><button onClick={() => onOpenLegal('terms')} className="hover:text-white transition-colors text-left">Terms of Service</button></li>
-              <li><button onClick={() => onOpenLegal('cookies')} className="hover:text-white transition-colors text-left">Cookie Policy</button></li>
+              <li><button onClick={() => onOpenLegal('privacy')} className="hover:text-white transition-colors text-left py-2 md:py-0 block w-full md:w-auto">Privacy Policy</button></li>
+              <li><button onClick={() => onOpenLegal('terms')} className="hover:text-white transition-colors text-left py-2 md:py-0 block w-full md:w-auto">Terms of Service</button></li>
+              <li><button onClick={() => onOpenLegal('cookies')} className="hover:text-white transition-colors text-left py-2 md:py-0 block w-full md:w-auto">Cookie Policy</button></li>
             </ul>
           </div>
         </div>

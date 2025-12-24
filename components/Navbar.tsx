@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
                 </a>
               ))}
               <a
-                href="tel:07415535213"
+                href="tel:"
                 className="mt-8 flex items-center gap-3 bg-amber text-navy px-8 py-4 font-bold text-lg rounded min-h-[44px]"
               >
                 <Phone className="w-5 h-5" />

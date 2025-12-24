@@ -76,14 +76,14 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
     return (
         <AnimatePresence>
             {isOpen && (
-                <>
+                <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4">
                     {/* Backdrop */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={onClose}
-                        className="fixed inset-0 bg-navy/60 backdrop-blur-sm z-[150]"
+                        className="fixed inset-0 bg-navy/60 backdrop-blur-sm"
                     />
 
                     {/* Modal */}
@@ -91,39 +91,37 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl z-[160] px-4"
+                        className="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[85dvh] sm:max-h-[80vh] z-[1001]"
                     >
-                        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
-                            {/* Header */}
-                            <div className="p-6 bg-navy text-white flex items-center justify-between shrink-0">
-                                <div className="flex items-center gap-3">
-                                    <div className="bg-white/10 p-2 rounded-lg text-amber">
-                                        <currentContent.icon className="w-5 h-5" />
-                                    </div>
-                                    <h3 className="text-xl font-bold">{currentContent.title}</h3>
+                        {/* Header */}
+                        <div className="p-4 sm:p-6 bg-navy text-white flex items-center justify-between shrink-0">
+                            <div className="flex items-center gap-3">
+                                <div className="bg-white/10 p-2 rounded-lg text-amber">
+                                    <currentContent.icon className="w-5 h-5" />
                                 </div>
-                                <button onClick={onClose} className="text-white/50 hover:text-white transition-colors">
-                                    <X className="w-6 h-6" />
-                                </button>
+                                <h3 className="text-lg sm:text-xl font-bold">{currentContent.title}</h3>
                             </div>
+                            <button onClick={onClose} className="text-white/50 hover:text-white transition-colors p-2">
+                                <X className="w-6 h-6" />
+                            </button>
+                        </div>
 
-                            {/* Scrollable Content */}
-                            <div className="p-6 md:p-8 overflow-y-auto custom-scrollbar">
-                                {currentContent.text}
-                            </div>
+                        {/* Scrollable Content */}
+                        <div className="p-4 sm:p-8 overflow-y-auto custom-scrollbar overscroll-contain">
+                            {currentContent.text}
+                        </div>
 
-                            {/* Footer */}
-                            <div className="p-6 border-t border-gray-100 bg-gray-50 flex justify-end shrink-0">
-                                <button
-                                    onClick={onClose}
-                                    className="bg-navy text-white px-6 py-2 rounded-lg font-bold hover:bg-navy-light transition-colors"
-                                >
-                                    Close
-                                </button>
-                            </div>
+                        {/* Footer */}
+                        <div className="p-4 sm:p-6 border-t border-gray-100 bg-gray-50 flex justify-end shrink-0">
+                            <button
+                                onClick={onClose}
+                                className="w-full sm:w-auto bg-navy text-white px-6 py-3 sm:py-2 rounded-lg font-bold hover:bg-navy-light transition-colors active:scale-95 transform"
+                            >
+                                Close
+                            </button>
                         </div>
                     </motion.div>
-                </>
+                </div>
             )}
         </AnimatePresence>
     );
