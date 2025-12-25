@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import EmpathySection from './components/EmpathySection';
@@ -44,6 +45,7 @@ const App: React.FC = () => {
         onClose={() => setLegalModalOpen(false)}
         type={legalModalType}
       />
+      <Analytics />
     </div>
   );
 };
