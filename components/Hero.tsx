@@ -20,6 +20,7 @@ const Hero: React.FC = () => {
           muted
           loop
           playsInline
+          poster="/images/IMG_1412.jpeg"
           className="w-full h-full object-cover object-center"
         >
           <source src="/videos/hero-video.mp4" type="video/mp4" />
