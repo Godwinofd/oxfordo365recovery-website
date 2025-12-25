@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-navy focus:outline-none w-11 h-11 flex items-center justify-center"
+              className={`${isMobileMenuOpen ? 'text-white' : 'text-navy'} focus:outline-none w-11 h-11 flex items-center justify-center`}
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
