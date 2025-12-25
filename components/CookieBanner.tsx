@@ -70,6 +70,7 @@ const CookieBanner: React.FC = () => {
                         <button
                             onClick={() => setIsVisible(false)}
                             className="absolute top-4 right-4 text-white/40 hover:text-white transition-colors"
+                            aria-label="Close cookie banner"
                         >
                             <X className="w-4 h-4" />
                         </button>

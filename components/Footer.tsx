@@ -33,6 +33,8 @@ const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
               <img
                 src="/logo.png"
                 alt="Oxford 365 Recovery"
+                width="160"
+                height="54"
                 className="h-10 w-auto"
               />
             </div>
@@ -47,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
             <ul className="space-y-3 text-sm text-white/60">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-amber" />
-                <a href="tel:07415535213" className="hover:text-white transition-colors">07415535213</a>
+                <a href="tel:07415535213" className="hover:text-white transition-colors" aria-label="Call 07415535213">07415535213</a>
               </li>
             </ul>
           </div>

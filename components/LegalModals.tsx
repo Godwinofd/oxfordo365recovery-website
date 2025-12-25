@@ -101,7 +101,7 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, onClose, type }) => {
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold">{currentContent.title}</h3>
                             </div>
-                            <button onClick={onClose} className="text-white/50 hover:text-white transition-colors p-2">
+                            <button onClick={onClose} className="text-white/50 hover:text-white transition-colors p-2" aria-label="Close modal">
                                 <X className="w-6 h-6" />
                             </button>
                         </div>
