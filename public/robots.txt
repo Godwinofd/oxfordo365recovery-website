@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oxford365recovery.co.uk/sitemap.xml
+Sitemap: https://oxford365recovery.com/sitemap.xml
