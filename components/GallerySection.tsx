@@ -21,24 +21,32 @@ const GallerySection: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {images.map((src, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1, duration: 0.6 }}
-            className="aspect-[4/3] overflow-hidden rounded-xl bg-gray-100 relative group shadow-sm hover:shadow-md transition-all duration-300"
-          >
-            <img
-              src={src}
-              alt={`Vehicle recovery scene ${index + 1}`}
-              loading="lazy"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </motion.div>
-        ))}
+        {images.map((src, index) => {
+          const altTexts = [
+            "24/7 recovery truck assisting a vehicle in Oxford",
+            "Emergency roadside assistance vehicle on the A34 Oxfordshire",
+            "Vehicle transport service providing recovery in Oxford city centre",
+            "Professional breakdown recovery team at work in Oxfordshire"
+          ];
+          return (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1, duration: 0.6 }}
+              className="aspect-[4/3] overflow-hidden rounded-xl bg-gray-100 relative group shadow-sm hover:shadow-md transition-all duration-300"
+            >
+              <img
+                src={src}
+                alt={altTexts[index] || "Professional vehicle recovery in Oxford"}
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </motion.div>
+          );
+        })}
       </div>
     </Section>
   );

@@ -28,6 +28,12 @@ const Hero: React.FC = () => {
         </video>
       </motion.div>
 
+      {/* SEO-focused hidden content */}
+      <div className="sr-only">
+        <h2>Emergency Car Recovery & Tow Truck Oxford</h2>
+        <p>Reliable breakdown recovery, vehicle transport, and roadside assistance throughout Oxfordshire including M40 and A34.</p>
+      </div>
+
       {/* Content Container */}
       <div className="relative z-20 h-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex flex-col justify-center">
 
@@ -56,7 +62,7 @@ const Hero: React.FC = () => {
                 animate={{ y: 0 }}
                 transition={{ delay: 0.7, duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
               >
-                Breakdown in <span className="text-amber">Oxford</span>?
+                24/7 Vehicle <span className="text-amber">Recovery</span>
               </motion.span>
             </div>
             <div className="overflow-hidden">
@@ -66,7 +72,7 @@ const Hero: React.FC = () => {
                 animate={{ y: 0 }}
                 transition={{ delay: 0.9, duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
               >
-                We are on our way.
+                In Oxford & Oxfordshire
               </motion.span>
             </div>
           </h1>

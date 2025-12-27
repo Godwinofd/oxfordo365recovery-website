@@ -55,11 +55,25 @@ const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
           </div>
 
           <div>
+            <h4 className="font-bold mb-4 text-white">Areas We Serve</h4>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-white/50">
+              <li><span className="hover:text-white transition-colors cursor-default">Oxford City</span></li>
+              <li><span className="hover:text-white transition-colors cursor-default">Abingdon</span></li>
+              <li><span className="hover:text-white transition-colors cursor-default">Bicester</span></li>
+              <li><span className="hover:text-white transition-colors cursor-default">Witney</span></li>
+              <li><span className="hover:text-white transition-colors cursor-default">Kidlington</span></li>
+              <li><span className="hover:text-white transition-colors cursor-default">Headington</span></li>
+              <li><span className="hover:text-white transition-colors cursor-default">Cowley</span></li>
+              <li><span className="hover:text-white transition-colors cursor-default">Didcot</span></li>
+            </ul>
+          </div>
+
+          <div>
             <h4 className="font-bold mb-4 text-white">Legal</h4>
             <ul className="space-y-3 text-sm text-white/60">
               <li><button onClick={() => onOpenLegal('privacy')} className="hover:text-white transition-colors text-left py-2 md:py-0 block w-full md:w-auto">Privacy Policy</button></li>
-              <li><button onClick={() => onOpenLegal('terms')} className="hover:text-white transition-colors text-left py-2 md:py-0 block w-full md:w-auto">Terms of Service</button></li>
-              <li><button onClick={() => onOpenLegal('cookies')} className="hover:text-white transition-colors text-left py-2 md:py-0 block w-full md:w-auto">Cookie Policy</button></li>
+              <li><button onClick={() => onOpenLegal('terms')} className="hover:text-white transition-colors text-left py-2 md:py-0 block w-full md:text-xs lg:text-sm">Terms of Service</button></li>
+              <li><button onClick={() => onOpenLegal('cookies')} className="hover:text-white transition-colors text-left py-2 md:py-0 block w-full md:text-xs lg:text-sm">Cookie Policy</button></li>
             </ul>
           </div>
         </div>

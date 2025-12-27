@@ -4,10 +4,12 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import EmpathySection from './components/EmpathySection';
 import TrustSection from './components/TrustSection';
+import ExpertiseSection from './components/ExpertiseSection';
 import ServicesSection from './components/ServicesSection';
 import GallerySection from './components/GallerySection';
 import LocalCoverage from './components/LocalCoverage';
 import TestimonialsSection from './components/TestimonialsSection';
+import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
 import LegalModals from './components/LegalModals';
@@ -33,10 +35,12 @@ const App: React.FC = () => {
         <Hero />
         <EmpathySection />
         <TrustSection />
+        <ExpertiseSection />
         <ServicesSection />
         <GallerySection />
         <LocalCoverage />
         <TestimonialsSection />
+        <FAQSection />
       </main>
       <Footer onOpenLegal={openLegalModal} />
       <CookieBanner />

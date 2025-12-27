@@ -8,26 +8,26 @@ const ServicesSection: React.FC = () => {
   const services: ServiceItem[] = [
     {
       id: 'breakdown',
-      title: 'Roadside Repair',
-      description: "Whether it's a flat tyre in the rain or a warning light on the motorway, we diagnose and fix most issues right there, getting you back to your plans without a detour.",
+      title: 'Roadside Repair & Recovery',
+      description: "Stranded with a vehicle fault? Our expert mechanics provide rapid roadside assistance across Oxford. Whether it's a flat tyre in the rain or a warning light on the M40, we diagnose and fix most issues on the spot. If roadside repair isn't possible, we provide instant car recovery to your preferred garage, ensuring your journey continues with minimal disruption.",
       icon: Car
     },
     {
       id: 'recovery',
-      title: 'Vehicle Recovery',
-      description: 'Stuck in a ditch or facing a major breakdown miles from home? We gently transport your vehicle to your waiting garage or driveway, ensuring both you and your car get home safe.',
+      title: '24/7 Car Recovery Oxford',
+      description: 'Facing a major breakdown or accident? Our professional tow truck operators specialize in emergency car recovery and vehicle transport throughout Oxfordshire. From car recovery out of a ditch to long-distance vehicle transport from the A34, we gently handle your car, van, or motorbike, delivering it safely to your driveway or commercial garage 24 hours a day.',
       icon: Truck
     },
     {
       id: 'battery',
-      title: 'Battery Jump Start',
-      description: "Turn the key and hear nothing but a click? Cold mornings or left-on lights shouldn't ruin your day. We arrive quickly to power up your battery and check your charging system.",
+      title: 'Jump Start & Battery Service',
+      description: "Dead battery at the Westgate or home driveway? Cold mornings often lead to battery failure. Our rapid-response vehicle recovery team arrives quickly to provide a professional jump start. We don't just start the car; we test your charging system and battery health, preventing future breakdowns and saving you from more expensive car recovery call-outs later.",
       icon: Battery
     },
     {
       id: 'access',
-      title: 'Lockout Assistance',
-      description: "Keys locked inside with the engine running, or trapped in the boot? It happens to the best of us. We use non-destructive methods to get you back in the driver's seat in minutes.",
+      title: 'Non-Destructive Lockout Recovery',
+      description: "Locked your keys inside? It's a common stress, but our specialist vehicle recovery technicians are trained in non-destructive entry methods. Whether your engine is running or you're trapped at a service station on the M40, we get you back into your car or van within minutes without damaging locks or glass, a faster alternative to traditional car recovery.",
       icon: Key
     }
   ];
