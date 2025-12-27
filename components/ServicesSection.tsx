@@ -9,25 +9,25 @@ const ServicesSection: React.FC = () => {
     {
       id: 'breakdown',
       title: 'Roadside Repair',
-      description: 'Minor issues fixed on the spot so you can finish your journey.',
+      description: "Whether it's a flat tyre in the rain or a warning light on the motorway, we diagnose and fix most issues right there, getting you back to your plans without a detour.",
       icon: Car
     },
     {
       id: 'recovery',
       title: 'Vehicle Recovery',
-      description: 'Safe transport for your vehicle to a garage or your home.',
+      description: 'Stuck in a ditch or facing a major breakdown miles from home? We gently transport your vehicle to your waiting garage or driveway, ensuring both you and your car get home safe.',
       icon: Truck
     },
     {
       id: 'battery',
       title: 'Battery Jump Start',
-      description: 'Professional power restoration to get your engine running instantly.',
+      description: "Turn the key and hear nothing but a click? Cold mornings or left-on lights shouldn't ruin your day. We arrive quickly to power up your battery and check your charging system.",
       icon: Battery
     },
     {
       id: 'access',
       title: 'Lockout Assistance',
-      description: 'Regain access to your vehicle without damage.',
+      description: "Keys locked inside with the engine running, or trapped in the boot? It happens to the best of us. We use non-destructive methods to get you back in the driver's seat in minutes.",
       icon: Key
     }
   ];
